@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Voice Recorder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Use the following code to create a voice recorder with recording controls -->
+    <div class="voice-recorder">
+      <audio id="audioPlayer" controls></audio>
+      <div>
+        <button id="startRecording">Record</button>
+        <button id="stopRecording" disabled>Stop</button>
+      </div>
+      <button id="save">save</button>
+    </div>
+    <div class="audio-list">
+      <h2>My audios</h2>
+      <ul id="list">
+        <li>
+          <audio id="audioPlayer" controls></audio>
+        </li>
+        <li>
+          <audio id="audioPlayer" controls></audio>
+        </li>
+        <li>
+          <audio id="audioPlayer" controls></audio>
+        </li>
+        <li>
+          <audio id="audioPlayer" controls></audio>
+        </li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
